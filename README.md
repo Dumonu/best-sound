@@ -5,4 +5,6 @@ Requires a player capable of playing a bytestream from stdin.
 
 Instuctions (Linux):
 Compile:
-gcc 
+gcc sound.c -o sound
+Run:
+./sound | aplay
