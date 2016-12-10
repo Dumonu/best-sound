@@ -10,5 +10,7 @@ Run:<br />
 ./sound | aplay
 
 Contributors:
+
 Oskari Pirhonen
+
 Jacob Cherry
