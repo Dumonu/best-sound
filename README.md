@@ -1,20 +1,14 @@
 # best-sound
 
-Randomly generates a musical bytestream that can be played by piping to aplay or other similar utility.
+Randomly generates a musical bytestream that can be played by piping to aplay or other similar utility.<br />
 Requires a player capable of playing a bytestream from stdin.
 
-Instuctions (Linux):
-
-Compile:
-
-gcc sound.c -o sound
-
-Run:
-
+Instuctions (Linux):<br />
+Compile:<br />
+gcc sound.c -o sound<br />
+Run:<br />
 ./sound | aplay
 
-Contributors:
-
-Oskari Pirhonen
-
+Contributors:<br />
+Oskari Pirhonen<br />
 Jacob Cherry
