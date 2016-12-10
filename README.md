@@ -12,3 +12,5 @@ Run:<br />
 Contributors:<br />
 Oskari Pirhonen<br />
 Jacob Cherry
+
+Based on Bitshift Variations in C Minor, by Robert Skmiles.
