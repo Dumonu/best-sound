@@ -24,13 +24,21 @@ int generate_2 (int i, int x, int t, int o) {
 return ((3 & x & (i * ((3 & i >> 16 ? str1 : str2)[t % len] + 51) >> o )) << bs1);
 }
 
-int main (int i, int n, int s) {
+int main (int argc, char *argv[]) {
+    int i, n, s;
     srand (time(0));
-    len = (rand () % 15) + 5;
-    str1 = malloc (len);
-    str2 = malloc (len);
-    bs1 = rand () % 16;
-    set_str ();
+    if(argc > 1) {
+        len = (int)strtol(argv[1], 0, 0);
+	str1 = argv[2];
+	str2 = argv[3];
+	bs1 = (int)strtol(argv[4], 0, 0);
+    } else {
+	len = (rand () % 15) + 5;
+	str1 = malloc (len);
+	str2 = malloc (len);
+	bs1 = rand () % 16;
+	set_str ();
+    }
     FILE *out = fopen ("values.txt", "a");
     if (out) {
         fprintf (out, "Length: %d\n", len);
